@@ -1,0 +1,893 @@
+12-22 21:23 root         INFO     sampling_rate: 0.01
+12-22 21:23 root         INFO     sampling start
+12-22 21:23 root         INFO     #samples: 304
+12-22 21:23 root         INFO     sampling end
+12-22 21:23 root         INFO     train_df.shape: (304, 1947)
+12-22 21:23 root         INFO     train_df -                                 id          item_id      dept_id     cat_id  ... d_1938 d_1939  d_1940  d_1941
+0    HOBBIES_1_090_CA_1_evaluation    HOBBIES_1_090    HOBBIES_1    HOBBIES  ...      0      0       8       0
+1    HOBBIES_1_369_CA_1_evaluation    HOBBIES_1_369    HOBBIES_1    HOBBIES  ...      1      7       5       0
+2  HOUSEHOLD_1_033_CA_1_evaluation  HOUSEHOLD_1_033  HOUSEHOLD_1  HOUSEHOLD  ...      1      1       3       4
+3  HOUSEHOLD_1_080_CA_1_evaluation  HOUSEHOLD_1_080  HOUSEHOLD_1  HOUSEHOLD  ...      0      0       1       1
+4  HOUSEHOLD_1_147_CA_1_evaluation  HOUSEHOLD_1_147  HOUSEHOLD_1  HOUSEHOLD  ...      3      1       1       2
+
+[5 rows x 1947 columns]
+12-22 21:23 root         INFO     prices_df.shape: (625776, 4)
+12-22 21:23 root         INFO     prices_df -   store_id        item_id  wm_yr_wk  sell_price
+0     CA_1  HOBBIES_1_008     11101        0.46
+1     CA_1  HOBBIES_1_008     11102        0.46
+2     CA_1  HOBBIES_1_008     11103        0.46
+3     CA_1  HOBBIES_1_008     11104        0.42
+4     CA_1  HOBBIES_1_008     11105        0.42
+12-22 21:23 root         INFO     calendar_df.shape: (1969, 14)
+12-22 21:23 root         INFO     calendar_df -          date  wm_yr_wk    weekday  wday  month  ...  event_name_2 event_type_2 snap_CA snap_TX snap_WI
+0  2011-01-29     11101   Saturday     1      1  ...           NaN          NaN       0       0       0
+1  2011-01-30     11101     Sunday     2      1  ...           NaN          NaN       0       0       0
+2  2011-01-31     11101     Monday     3      1  ...           NaN          NaN       0       0       0
+3  2011-02-01     11101    Tuesday     4      2  ...           NaN          NaN       1       1       0
+4  2011-02-02     11101  Wednesday     5      2  ...           NaN          NaN       1       0       1
+
+[5 rows x 14 columns]
+12-22 21:23 root         INFO     end_train_day_x_list - [1913]
+12-22 21:23 root         INFO     prediction_horizon_list - [7, 14, 21, 28]
+12-22 21:23 root         INFO     ----------------- fold_id 1913, predict_horizon 7
+12-22 21:23 root         INFO     load_grid_full
+12-22 21:23 root         INFO     train CA_1
+12-22 21:23 root         INFO     [1913 - 7] train 1/10 CA_1
+12-22 21:23 root         INFO     export train
+12-22 21:23 root         INFO     export valid
+12-22 21:23 root         INFO     export test
+12-22 21:23 root         INFO     export train_valid_test
+12-22 21:24 root         INFO     train CA_2
+12-22 21:24 root         INFO     [1913 - 7] train 2/10 CA_2
+12-22 21:24 root         INFO     export train
+12-22 21:24 root         INFO     export valid
+12-22 21:24 root         INFO     export test
+12-22 21:24 root         INFO     export train_valid_test
+12-22 21:24 root         INFO     train CA_3
+12-22 21:24 root         INFO     [1913 - 7] train 3/10 CA_3
+12-22 21:24 root         INFO     export train
+12-22 21:24 root         INFO     export valid
+12-22 21:24 root         INFO     export test
+12-22 21:24 root         INFO     export train_valid_test
+12-22 21:24 root         INFO     train CA_4
+12-22 21:24 root         INFO     [1913 - 7] train 4/10 CA_4
+12-22 21:24 root         INFO     export train
+12-22 21:24 root         INFO     export valid
+12-22 21:24 root         INFO     export test
+12-22 21:24 root         INFO     export train_valid_test
+12-22 21:24 root         INFO     train TX_1
+12-22 21:24 root         INFO     [1913 - 7] train 5/10 TX_1
+12-22 21:24 root         INFO     export train
+12-22 21:24 root         INFO     export valid
+12-22 21:24 root         INFO     export test
+12-22 21:24 root         INFO     export train_valid_test
+12-22 21:24 root         INFO     train TX_2
+12-22 21:24 root         INFO     [1913 - 7] train 6/10 TX_2
+12-22 21:24 root         INFO     export train
+12-22 21:24 root         INFO     export valid
+12-22 21:24 root         INFO     export test
+12-22 21:24 root         INFO     export train_valid_test
+12-22 21:25 root         INFO     train TX_3
+12-22 21:25 root         INFO     [1913 - 7] train 7/10 TX_3
+12-22 21:25 root         INFO     export train
+12-22 21:25 root         INFO     export valid
+12-22 21:25 root         INFO     export test
+12-22 21:25 root         INFO     export train_valid_test
+12-22 21:25 root         INFO     train WI_1
+12-22 21:25 root         INFO     [1913 - 7] train 8/10 WI_1
+12-22 21:25 root         INFO     export train
+12-22 21:25 root         INFO     export valid
+12-22 21:25 root         INFO     export test
+12-22 21:25 root         INFO     export train_valid_test
+12-22 21:25 root         INFO     train WI_2
+12-22 21:25 root         INFO     [1913 - 7] train 9/10 WI_2
+12-22 21:25 root         INFO     export train
+12-22 21:25 root         INFO     export valid
+12-22 21:25 root         INFO     export test
+12-22 21:25 root         INFO     export train_valid_test
+12-22 21:25 root         INFO     train WI_3
+12-22 21:25 root         INFO     [1913 - 7] train 10/10 WI_3
+12-22 21:25 root         INFO     export train
+12-22 21:25 root         INFO     export valid
+12-22 21:25 root         INFO     export test
+12-22 21:25 root         INFO     export train_valid_test
+12-22 21:25 root         INFO     aggregate feature importance
+12-22 21:25 root         INFO     load base_test
+12-22 21:25 root         INFO     predict day01
+12-22 21:25 root         INFO     [1913 - 7] predict 1/10 CA_1 day 1
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 2/10 CA_2 day 1
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 3/10 CA_3 day 1
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 4/10 CA_4 day 1
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 5/10 TX_1 day 1
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 6/10 TX_2 day 1
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 7/10 TX_3 day 1
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 8/10 WI_1 day 1
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 9/10 WI_2 day 1
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 10/10 WI_3 day 1
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     predict day02
+12-22 21:25 root         INFO     [1913 - 7] predict 1/10 CA_1 day 2
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 2/10 CA_2 day 2
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 3/10 CA_3 day 2
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 4/10 CA_4 day 2
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 5/10 TX_1 day 2
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 6/10 TX_2 day 2
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 7/10 TX_3 day 2
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 8/10 WI_1 day 2
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 9/10 WI_2 day 2
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 10/10 WI_3 day 2
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     predict day03
+12-22 21:25 root         INFO     [1913 - 7] predict 1/10 CA_1 day 3
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 2/10 CA_2 day 3
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 3/10 CA_3 day 3
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 4/10 CA_4 day 3
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 5/10 TX_1 day 3
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 6/10 TX_2 day 3
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 7/10 TX_3 day 3
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 8/10 WI_1 day 3
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 9/10 WI_2 day 3
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 10/10 WI_3 day 3
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     predict day04
+12-22 21:25 root         INFO     [1913 - 7] predict 1/10 CA_1 day 4
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 2/10 CA_2 day 4
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 3/10 CA_3 day 4
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 4/10 CA_4 day 4
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 5/10 TX_1 day 4
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 6/10 TX_2 day 4
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 7/10 TX_3 day 4
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 8/10 WI_1 day 4
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 9/10 WI_2 day 4
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 10/10 WI_3 day 4
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     predict day05
+12-22 21:25 root         INFO     [1913 - 7] predict 1/10 CA_1 day 5
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 2/10 CA_2 day 5
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 3/10 CA_3 day 5
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 4/10 CA_4 day 5
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 5/10 TX_1 day 5
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 6/10 TX_2 day 5
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 7/10 TX_3 day 5
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 8/10 WI_1 day 5
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 9/10 WI_2 day 5
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 10/10 WI_3 day 5
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     predict day06
+12-22 21:25 root         INFO     [1913 - 7] predict 1/10 CA_1 day 6
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 2/10 CA_2 day 6
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 3/10 CA_3 day 6
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 4/10 CA_4 day 6
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 5/10 TX_1 day 6
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 6/10 TX_2 day 6
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 7/10 TX_3 day 6
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 8/10 WI_1 day 6
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 9/10 WI_2 day 6
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 10/10 WI_3 day 6
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     predict day07
+12-22 21:25 root         INFO     [1913 - 7] predict 1/10 CA_1 day 7
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 2/10 CA_2 day 7
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 3/10 CA_3 day 7
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 4/10 CA_4 day 7
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 5/10 TX_1 day 7
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 6/10 TX_2 day 7
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 7/10 TX_3 day 7
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 8/10 WI_1 day 7
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 9/10 WI_2 day 7
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     [1913 - 7] predict 10/10 WI_3 day 7
+12-22 21:25 root         INFO     export pred
+12-22 21:25 root         INFO     ----------------- fold_id 1913, predict_horizon 14
+12-22 21:25 root         INFO     load_grid_full
+12-22 21:25 root         INFO     train CA_1
+12-22 21:25 root         INFO     [1913 - 14] train 1/10 CA_1
+12-22 21:25 root         INFO     export train
+12-22 21:25 root         INFO     export valid
+12-22 21:25 root         INFO     export test
+12-22 21:25 root         INFO     export train_valid_test
+12-22 21:25 root         INFO     train CA_2
+12-22 21:25 root         INFO     [1913 - 14] train 2/10 CA_2
+12-22 21:25 root         INFO     export train
+12-22 21:26 root         INFO     export valid
+12-22 21:26 root         INFO     export test
+12-22 21:26 root         INFO     export train_valid_test
+12-22 21:26 root         INFO     train CA_3
+12-22 21:26 root         INFO     [1913 - 14] train 3/10 CA_3
+12-22 21:26 root         INFO     export train
+12-22 21:26 root         INFO     export valid
+12-22 21:26 root         INFO     export test
+12-22 21:26 root         INFO     export train_valid_test
+12-22 21:26 root         INFO     train CA_4
+12-22 21:26 root         INFO     [1913 - 14] train 4/10 CA_4
+12-22 21:26 root         INFO     export train
+12-22 21:26 root         INFO     export valid
+12-22 21:26 root         INFO     export test
+12-22 21:26 root         INFO     export train_valid_test
+12-22 21:26 root         INFO     train TX_1
+12-22 21:26 root         INFO     [1913 - 14] train 5/10 TX_1
+12-22 21:26 root         INFO     export train
+12-22 21:26 root         INFO     export valid
+12-22 21:26 root         INFO     export test
+12-22 21:26 root         INFO     export train_valid_test
+12-22 21:26 root         INFO     train TX_2
+12-22 21:26 root         INFO     [1913 - 14] train 6/10 TX_2
+12-22 21:26 root         INFO     export train
+12-22 21:26 root         INFO     export valid
+12-22 21:26 root         INFO     export test
+12-22 21:26 root         INFO     export train_valid_test
+12-22 21:26 root         INFO     train TX_3
+12-22 21:26 root         INFO     [1913 - 14] train 7/10 TX_3
+12-22 21:26 root         INFO     export train
+12-22 21:27 root         INFO     export valid
+12-22 21:27 root         INFO     export test
+12-22 21:27 root         INFO     export train_valid_test
+12-22 21:27 root         INFO     train WI_1
+12-22 21:27 root         INFO     [1913 - 14] train 8/10 WI_1
+12-22 21:27 root         INFO     export train
+12-22 21:27 root         INFO     export valid
+12-22 21:27 root         INFO     export test
+12-22 21:27 root         INFO     export train_valid_test
+12-22 21:27 root         INFO     train WI_2
+12-22 21:27 root         INFO     [1913 - 14] train 9/10 WI_2
+12-22 21:27 root         INFO     export train
+12-22 21:27 root         INFO     export valid
+12-22 21:27 root         INFO     export test
+12-22 21:27 root         INFO     export train_valid_test
+12-22 21:27 root         INFO     train WI_3
+12-22 21:27 root         INFO     [1913 - 14] train 10/10 WI_3
+12-22 21:27 root         INFO     export train
+12-22 21:27 root         INFO     export valid
+12-22 21:27 root         INFO     export test
+12-22 21:27 root         INFO     export train_valid_test
+12-22 21:27 root         INFO     aggregate feature importance
+12-22 21:27 root         INFO     load base_test
+12-22 21:27 root         INFO     predict day08
+12-22 21:27 root         INFO     [1913 - 14] predict 1/10 CA_1 day 8
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 2/10 CA_2 day 8
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 3/10 CA_3 day 8
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 4/10 CA_4 day 8
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 5/10 TX_1 day 8
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 6/10 TX_2 day 8
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 7/10 TX_3 day 8
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 8/10 WI_1 day 8
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 9/10 WI_2 day 8
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 10/10 WI_3 day 8
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     predict day09
+12-22 21:27 root         INFO     [1913 - 14] predict 1/10 CA_1 day 9
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 2/10 CA_2 day 9
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 3/10 CA_3 day 9
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 4/10 CA_4 day 9
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 5/10 TX_1 day 9
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 6/10 TX_2 day 9
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 7/10 TX_3 day 9
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 8/10 WI_1 day 9
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 9/10 WI_2 day 9
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 10/10 WI_3 day 9
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     predict day10
+12-22 21:27 root         INFO     [1913 - 14] predict 1/10 CA_1 day 10
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 2/10 CA_2 day 10
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 3/10 CA_3 day 10
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 4/10 CA_4 day 10
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 5/10 TX_1 day 10
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 6/10 TX_2 day 10
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 7/10 TX_3 day 10
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 8/10 WI_1 day 10
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 9/10 WI_2 day 10
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 10/10 WI_3 day 10
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     predict day11
+12-22 21:27 root         INFO     [1913 - 14] predict 1/10 CA_1 day 11
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 2/10 CA_2 day 11
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 3/10 CA_3 day 11
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 4/10 CA_4 day 11
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 5/10 TX_1 day 11
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 6/10 TX_2 day 11
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 7/10 TX_3 day 11
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 8/10 WI_1 day 11
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 9/10 WI_2 day 11
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 10/10 WI_3 day 11
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     predict day12
+12-22 21:27 root         INFO     [1913 - 14] predict 1/10 CA_1 day 12
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 2/10 CA_2 day 12
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 3/10 CA_3 day 12
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 4/10 CA_4 day 12
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 5/10 TX_1 day 12
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 6/10 TX_2 day 12
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 7/10 TX_3 day 12
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 8/10 WI_1 day 12
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 9/10 WI_2 day 12
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 10/10 WI_3 day 12
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     predict day13
+12-22 21:27 root         INFO     [1913 - 14] predict 1/10 CA_1 day 13
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 2/10 CA_2 day 13
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 3/10 CA_3 day 13
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 4/10 CA_4 day 13
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 5/10 TX_1 day 13
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 6/10 TX_2 day 13
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 7/10 TX_3 day 13
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 8/10 WI_1 day 13
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 9/10 WI_2 day 13
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 10/10 WI_3 day 13
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     predict day14
+12-22 21:27 root         INFO     [1913 - 14] predict 1/10 CA_1 day 14
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 2/10 CA_2 day 14
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 3/10 CA_3 day 14
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 4/10 CA_4 day 14
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 5/10 TX_1 day 14
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 6/10 TX_2 day 14
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 7/10 TX_3 day 14
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 8/10 WI_1 day 14
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 9/10 WI_2 day 14
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     [1913 - 14] predict 10/10 WI_3 day 14
+12-22 21:27 root         INFO     export pred
+12-22 21:27 root         INFO     ----------------- fold_id 1913, predict_horizon 21
+12-22 21:27 root         INFO     load_grid_full
+12-22 21:27 root         INFO     train CA_1
+12-22 21:27 root         INFO     [1913 - 21] train 1/10 CA_1
+12-22 21:27 root         INFO     export train
+12-22 21:27 root         INFO     export valid
+12-22 21:27 root         INFO     export test
+12-22 21:27 root         INFO     export train_valid_test
+12-22 21:27 root         INFO     train CA_2
+12-22 21:27 root         INFO     [1913 - 21] train 2/10 CA_2
+12-22 21:27 root         INFO     export train
+12-22 21:28 root         INFO     export valid
+12-22 21:28 root         INFO     export test
+12-22 21:28 root         INFO     export train_valid_test
+12-22 21:28 root         INFO     train CA_3
+12-22 21:28 root         INFO     [1913 - 21] train 3/10 CA_3
+12-22 21:28 root         INFO     export train
+12-22 21:28 root         INFO     export valid
+12-22 21:28 root         INFO     export test
+12-22 21:28 root         INFO     export train_valid_test
+12-22 21:28 root         INFO     train CA_4
+12-22 21:28 root         INFO     [1913 - 21] train 4/10 CA_4
+12-22 21:28 root         INFO     export train
+12-22 21:28 root         INFO     export valid
+12-22 21:28 root         INFO     export test
+12-22 21:28 root         INFO     export train_valid_test
+12-22 21:28 root         INFO     train TX_1
+12-22 21:28 root         INFO     [1913 - 21] train 5/10 TX_1
+12-22 21:28 root         INFO     export train
+12-22 21:28 root         INFO     export valid
+12-22 21:28 root         INFO     export test
+12-22 21:28 root         INFO     export train_valid_test
+12-22 21:28 root         INFO     train TX_2
+12-22 21:28 root         INFO     [1913 - 21] train 6/10 TX_2
+12-22 21:28 root         INFO     export train
+12-22 21:28 root         INFO     export valid
+12-22 21:28 root         INFO     export test
+12-22 21:28 root         INFO     export train_valid_test
+12-22 21:28 root         INFO     train TX_3
+12-22 21:28 root         INFO     [1913 - 21] train 7/10 TX_3
+12-22 21:28 root         INFO     export train
+12-22 21:28 root         INFO     export valid
+12-22 21:28 root         INFO     export test
+12-22 21:28 root         INFO     export train_valid_test
+12-22 21:29 root         INFO     train WI_1
+12-22 21:29 root         INFO     [1913 - 21] train 8/10 WI_1
+12-22 21:29 root         INFO     export train
+12-22 21:29 root         INFO     export valid
+12-22 21:29 root         INFO     export test
+12-22 21:29 root         INFO     export train_valid_test
+12-22 21:29 root         INFO     train WI_2
+12-22 21:29 root         INFO     [1913 - 21] train 9/10 WI_2
+12-22 21:29 root         INFO     export train
+12-22 21:29 root         INFO     export valid
+12-22 21:29 root         INFO     export test
+12-22 21:29 root         INFO     export train_valid_test
+12-22 21:29 root         INFO     train WI_3
+12-22 21:29 root         INFO     [1913 - 21] train 10/10 WI_3
+12-22 21:29 root         INFO     export train
+12-22 21:29 root         INFO     export valid
+12-22 21:29 root         INFO     export test
+12-22 21:29 root         INFO     export train_valid_test
+12-22 21:29 root         INFO     aggregate feature importance
+12-22 21:29 root         INFO     load base_test
+12-22 21:29 root         INFO     predict day15
+12-22 21:29 root         INFO     [1913 - 21] predict 1/10 CA_1 day 15
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 2/10 CA_2 day 15
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 3/10 CA_3 day 15
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 4/10 CA_4 day 15
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 5/10 TX_1 day 15
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 6/10 TX_2 day 15
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 7/10 TX_3 day 15
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 8/10 WI_1 day 15
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 9/10 WI_2 day 15
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 10/10 WI_3 day 15
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     predict day16
+12-22 21:29 root         INFO     [1913 - 21] predict 1/10 CA_1 day 16
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 2/10 CA_2 day 16
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 3/10 CA_3 day 16
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 4/10 CA_4 day 16
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 5/10 TX_1 day 16
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 6/10 TX_2 day 16
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 7/10 TX_3 day 16
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 8/10 WI_1 day 16
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 9/10 WI_2 day 16
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 10/10 WI_3 day 16
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     predict day17
+12-22 21:29 root         INFO     [1913 - 21] predict 1/10 CA_1 day 17
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 2/10 CA_2 day 17
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 3/10 CA_3 day 17
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 4/10 CA_4 day 17
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 5/10 TX_1 day 17
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 6/10 TX_2 day 17
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 7/10 TX_3 day 17
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 8/10 WI_1 day 17
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 9/10 WI_2 day 17
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 10/10 WI_3 day 17
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     predict day18
+12-22 21:29 root         INFO     [1913 - 21] predict 1/10 CA_1 day 18
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 2/10 CA_2 day 18
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 3/10 CA_3 day 18
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 4/10 CA_4 day 18
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 5/10 TX_1 day 18
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 6/10 TX_2 day 18
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 7/10 TX_3 day 18
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 8/10 WI_1 day 18
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 9/10 WI_2 day 18
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 10/10 WI_3 day 18
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     predict day19
+12-22 21:29 root         INFO     [1913 - 21] predict 1/10 CA_1 day 19
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 2/10 CA_2 day 19
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 3/10 CA_3 day 19
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 4/10 CA_4 day 19
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 5/10 TX_1 day 19
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 6/10 TX_2 day 19
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 7/10 TX_3 day 19
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 8/10 WI_1 day 19
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 9/10 WI_2 day 19
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 10/10 WI_3 day 19
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     predict day20
+12-22 21:29 root         INFO     [1913 - 21] predict 1/10 CA_1 day 20
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 2/10 CA_2 day 20
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 3/10 CA_3 day 20
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 4/10 CA_4 day 20
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 5/10 TX_1 day 20
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 6/10 TX_2 day 20
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 7/10 TX_3 day 20
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 8/10 WI_1 day 20
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 9/10 WI_2 day 20
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 10/10 WI_3 day 20
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     predict day21
+12-22 21:29 root         INFO     [1913 - 21] predict 1/10 CA_1 day 21
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 2/10 CA_2 day 21
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 3/10 CA_3 day 21
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 4/10 CA_4 day 21
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 5/10 TX_1 day 21
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 6/10 TX_2 day 21
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 7/10 TX_3 day 21
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 8/10 WI_1 day 21
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 9/10 WI_2 day 21
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     [1913 - 21] predict 10/10 WI_3 day 21
+12-22 21:29 root         INFO     export pred
+12-22 21:29 root         INFO     ----------------- fold_id 1913, predict_horizon 28
+12-22 21:29 root         INFO     load_grid_full
+12-22 21:29 root         INFO     train CA_1
+12-22 21:29 root         INFO     [1913 - 28] train 1/10 CA_1
+12-22 21:29 root         INFO     export train
+12-22 21:29 root         INFO     export valid
+12-22 21:29 root         INFO     export test
+12-22 21:29 root         INFO     export train_valid_test
+12-22 21:29 root         INFO     train CA_2
+12-22 21:29 root         INFO     [1913 - 28] train 2/10 CA_2
+12-22 21:29 root         INFO     export train
+12-22 21:29 root         INFO     export valid
+12-22 21:29 root         INFO     export test
+12-22 21:29 root         INFO     export train_valid_test
+12-22 21:30 root         INFO     train CA_3
+12-22 21:30 root         INFO     [1913 - 28] train 3/10 CA_3
+12-22 21:30 root         INFO     export train
+12-22 21:30 root         INFO     export valid
+12-22 21:30 root         INFO     export test
+12-22 21:30 root         INFO     export train_valid_test
+12-22 21:30 root         INFO     train CA_4
+12-22 21:30 root         INFO     [1913 - 28] train 4/10 CA_4
+12-22 21:30 root         INFO     export train
+12-22 21:30 root         INFO     export valid
+12-22 21:30 root         INFO     export test
+12-22 21:30 root         INFO     export train_valid_test
+12-22 21:30 root         INFO     train TX_1
+12-22 21:30 root         INFO     [1913 - 28] train 5/10 TX_1
+12-22 21:30 root         INFO     export train
+12-22 21:30 root         INFO     export valid
+12-22 21:30 root         INFO     export test
+12-22 21:30 root         INFO     export train_valid_test
+12-22 21:30 root         INFO     train TX_2
+12-22 21:30 root         INFO     [1913 - 28] train 6/10 TX_2
+12-22 21:30 root         INFO     export train
+12-22 21:30 root         INFO     export valid
+12-22 21:30 root         INFO     export test
+12-22 21:30 root         INFO     export train_valid_test
+12-22 21:30 root         INFO     train TX_3
+12-22 21:30 root         INFO     [1913 - 28] train 7/10 TX_3
+12-22 21:30 root         INFO     export train
+12-22 21:30 root         INFO     export valid
+12-22 21:30 root         INFO     export test
+12-22 21:30 root         INFO     export train_valid_test
+12-22 21:30 root         INFO     train WI_1
+12-22 21:31 root         INFO     [1913 - 28] train 8/10 WI_1
+12-22 21:31 root         INFO     export train
+12-22 21:31 root         INFO     export valid
+12-22 21:31 root         INFO     export test
+12-22 21:31 root         INFO     export train_valid_test
+12-22 21:31 root         INFO     train WI_2
+12-22 21:31 root         INFO     [1913 - 28] train 9/10 WI_2
+12-22 21:31 root         INFO     export train
+12-22 21:31 root         INFO     export valid
+12-22 21:31 root         INFO     export test
+12-22 21:31 root         INFO     export train_valid_test
+12-22 21:31 root         INFO     train WI_3
+12-22 21:31 root         INFO     [1913 - 28] train 10/10 WI_3
+12-22 21:31 root         INFO     export train
+12-22 21:31 root         INFO     export valid
+12-22 21:31 root         INFO     export test
+12-22 21:31 root         INFO     export train_valid_test
+12-22 21:31 root         INFO     aggregate feature importance
+12-22 21:31 root         INFO     load base_test
+12-22 21:31 root         INFO     predict day22
+12-22 21:31 root         INFO     [1913 - 28] predict 1/10 CA_1 day 22
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 2/10 CA_2 day 22
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 3/10 CA_3 day 22
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 4/10 CA_4 day 22
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 5/10 TX_1 day 22
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 6/10 TX_2 day 22
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 7/10 TX_3 day 22
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 8/10 WI_1 day 22
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 9/10 WI_2 day 22
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 10/10 WI_3 day 22
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     predict day23
+12-22 21:31 root         INFO     [1913 - 28] predict 1/10 CA_1 day 23
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 2/10 CA_2 day 23
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 3/10 CA_3 day 23
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 4/10 CA_4 day 23
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 5/10 TX_1 day 23
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 6/10 TX_2 day 23
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 7/10 TX_3 day 23
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 8/10 WI_1 day 23
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 9/10 WI_2 day 23
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 10/10 WI_3 day 23
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     predict day24
+12-22 21:31 root         INFO     [1913 - 28] predict 1/10 CA_1 day 24
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 2/10 CA_2 day 24
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 3/10 CA_3 day 24
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 4/10 CA_4 day 24
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 5/10 TX_1 day 24
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 6/10 TX_2 day 24
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 7/10 TX_3 day 24
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 8/10 WI_1 day 24
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 9/10 WI_2 day 24
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 10/10 WI_3 day 24
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     predict day25
+12-22 21:31 root         INFO     [1913 - 28] predict 1/10 CA_1 day 25
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 2/10 CA_2 day 25
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 3/10 CA_3 day 25
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 4/10 CA_4 day 25
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 5/10 TX_1 day 25
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 6/10 TX_2 day 25
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 7/10 TX_3 day 25
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 8/10 WI_1 day 25
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 9/10 WI_2 day 25
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 10/10 WI_3 day 25
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     predict day26
+12-22 21:31 root         INFO     [1913 - 28] predict 1/10 CA_1 day 26
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 2/10 CA_2 day 26
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 3/10 CA_3 day 26
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 4/10 CA_4 day 26
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 5/10 TX_1 day 26
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 6/10 TX_2 day 26
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 7/10 TX_3 day 26
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 8/10 WI_1 day 26
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 9/10 WI_2 day 26
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 10/10 WI_3 day 26
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     predict day27
+12-22 21:31 root         INFO     [1913 - 28] predict 1/10 CA_1 day 27
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 2/10 CA_2 day 27
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 3/10 CA_3 day 27
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 4/10 CA_4 day 27
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 5/10 TX_1 day 27
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 6/10 TX_2 day 27
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 7/10 TX_3 day 27
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 8/10 WI_1 day 27
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 9/10 WI_2 day 27
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 10/10 WI_3 day 27
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     predict day28
+12-22 21:31 root         INFO     [1913 - 28] predict 1/10 CA_1 day 28
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 2/10 CA_2 day 28
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 3/10 CA_3 day 28
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 4/10 CA_4 day 28
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 5/10 TX_1 day 28
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 6/10 TX_2 day 28
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 7/10 TX_3 day 28
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 8/10 WI_1 day 28
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 9/10 WI_2 day 28
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     [1913 - 28] predict 10/10 WI_3 day 28
+12-22 21:31 root         INFO     export pred
+12-22 21:31 root         INFO     holdout_df.shape (8512, 3)
+12-22 21:31 root         INFO     pred_v_all_df.shape (8512, 3)
+12-22 21:31 root         INFO     calc metrics
+12-22 21:31 root         INFO     result_df.shape
+12-22 21:31 root         INFO     calc wrmsse
+12-22 21:31 root         INFO     adjust end of train period
+12-22 21:31 root         INFO     (304, 1947) --> (304, 1947)
+12-22 21:31 root         INFO     wrmsse 3.798661556340377
+12-22 21:31 root         INFO        fold_id metric_name  metric_value
+0     1913      wrmsse      3.798662
+1     1913        rmse      1.934885
+12-22 21:31 root         INFO        fold_id metric_name  metric_value
+0     1913      wrmsse      3.798662
+1     1913        rmse      1.934885
+12-22 21:31 root         INFO                      mean    median
+metric_name                    
+rmse         1.934885  1.934885
+wrmsse       3.798662  3.798662

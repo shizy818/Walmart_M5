@@ -1,0 +1,33 @@
+output: basic
+sampling_rate: 1.0
+# fold_id_list_csv: [1941,1913,1885,1857,1829,1577]
+fold_id_list_csv: [1941]
+prediction_horizon_list_csv: [7,14,21,28]
+num_rolling_day_list: [7, 14, 30, 60, 180]
+target: 'sales'
+main_index_list: ['id', 'd']
+seed: 42
+lgb_params: {
+            'boosting_type': 'gbdt',
+            'objective': 'tweedie',
+            'tweedie_variance_power': 1.1,
+            'metric': 'rmse',
+            'subsample': 0.5,
+            'subsample_freq': 1,
+            'learning_rate': 0.03,
+            'num_leaves': 2 ** 11 - 1,
+            'min_data_in_leaf': 2 ** 12 - 1,
+            'feature_fraction': 0.5,
+            'max_bin': 100,
+            'n_estimators': 1400,
+            'boost_from_average': False,
+            'verbose': -1,
+            'seed': 42,
+        }
+mean_features: [
+            'enc_cat_id_mean', 'enc_cat_id_std',
+            'enc_dept_id_mean', 'enc_dept_id_std',
+            'enc_item_id_mean', 'enc_item_id_std'
+        ]
+remove_features: ['id', 'state_id', 'store_id', 'date', 'wm_yr_wk', 'd', 'sales']
+export_all_flag: true
